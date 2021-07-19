@@ -9,6 +9,11 @@
     --grey: #333;
     font-size: 62.5%;
   }
+  header {
+    background: var(--secondary);
+    padding: 10px 15px;
+    border-bottom: 5px solid var(--primary);
+  }
   
   body {
     background: #ededed;
@@ -23,6 +28,7 @@
     justify-content: center;
   }
 
+  
   .container {
       width: 700px;
       max-width: 80%;
@@ -57,6 +63,12 @@
       padding: 10px 15px;
   }
 
+  .next-btn {
+      font-weight:bolder;
+      padding: 10px 15px;
+      background-color: green;
+  }
+
   .begin {
       display: flex;
       justify-content: center;
@@ -66,3 +78,12 @@
   .hide {
       display: none;
   }
+
+  #timer{
+    font-family: sans-serif;
+    background-color: #b9b73f;
+    color: #eeeeee;
+    font-size: x-large;
+    text-shadow: .5px .5px black;
+    text-align: center;
+}
