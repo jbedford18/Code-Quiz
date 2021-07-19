@@ -3,8 +3,10 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById ('answer-buttons')
+
+//variables for quiz
 var quizTimer = document.getElementById("timer");
-var timeLeft = 76;
+var timeLeft = 40;
 var timerInterval;
 
 let shuffledQuestions, currentQuestionIndex
@@ -15,6 +17,7 @@ nextButton.addEventListener('click', () => {
   setNextQuestion()
 })
 
+// Game start
 function startGame() {
     startButton.classList.add('hide')
     shuffledQuestions = questions.sort(()=> Math.random() - .5)
@@ -22,14 +25,13 @@ function startGame() {
     questionContainerElement.classList.remove('hide')
     setNextQuestion()
 
-    //Time
+    //Time start
      timerInterval = setInterval(function() {
      timeLeft--;
      quizTimer.textContent = "Time left: " + timeLeft;
         
          if(timeLeft === 0) {
               clearInterval(timerInterval);
-              showScore();
             }
           }, 1000);
     }
