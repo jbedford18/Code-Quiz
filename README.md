@@ -12,7 +12,7 @@ A code quiz to test your skills
  https://jbedford18.github.io/Code-Quiz/
 
 ## Screenshot
-![alt text](Assets/images/SS.png)
+![alt text](assets/images/SS.PNG)
 
 ## Contribution
 Made by Justin
